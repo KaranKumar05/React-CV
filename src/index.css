@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Variables  */
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/* Header */
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--bg-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+    text-decoration: none;
+
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    text-decoration: underline;
+
+}
+
+#menu-btn {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+/* home section  */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content h3:nth-child(3) {
+    font-size: 2rem;
+}
+
+.home-content h3:nth-child(3) span {
+    font-size: 3rem;
+
+}
+
+.home-img img {
+    width: 75vh;
+    opacity: .7;
+    animation: imagefloat 4s ease-in-out infinite;
+}
+
+@keyframes imagefloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    column-gap: 1em;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    margin: .5em 0 .7em 0;
+}
+
+.social-media a {
+    color: white;
+    border: 2px solid white;
+    padding: 0px 12px;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.social-media a:nth-child(1):hover {
+    background: linear-gradient(360deg,
+            rgba(200, 232, 26, 1) 0%,
+            rgba(207, 23, 23, 1) 40%,
+            rgba(255, 0, 190, 1) 100%);
+}
+
+.social-media a:nth-child(2):hover {
+    background-color: rgb(19, 19, 19);
+}
+
+.social-media a:nth-child(3):hover {
+    background-color: rgb(10, 49, 169);
+}
+
+.social-media a:nth-child(4):hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(75, 75, 255);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .3s ease;
+    font-size: 1.6rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.btn:hover {
+    box-shadow: 0 0 1rem white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+/* Profile Animation */
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-30px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Content Animation */
+@keyframes slideleft {
+    0% {
+        transform: translateX(600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* Shake animation for links */
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes slideright2 {
+    0% {
+        transform: translateX(-600px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
