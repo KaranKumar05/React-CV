@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 function MultiHeadline() {
   useEffect(() => {
     const typed = new Typed(".multi-headline", {
-      strings: ["Frontend Developer", "Gammer", "Graphic Designer", "Freelancer", "Blogger"],
+      strings: ["Frontend Developer", "Gammer", "Graphic Designer", "Freelancer", "MERN Developer"],
       typeSpeed: 80,
       backSpeed: 80,
       backDelay: 1000,
@@ -17,7 +17,7 @@ function MultiHeadline() {
   }, []);
 
   return (
-    <h3>
+    <h3 id='text_animation'>
       And I'm a <span className="multi-headline"></span>
     </h3>
   );

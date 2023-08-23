@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+</head>
+<style>
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 5em;
+    }
+
+    .main_menu ul {
+        display: flex;
+        gap: 3em;
+        list-style: none;
+    }
+
+    .main_menu ul a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media (max-width:991px) {
+        nav {
+            padding: 1em 2em;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .main_menu {
+            display: none;
+        }
+
+        .menu {
+            display: block;
+        }
+
+        .toggle_btn {
+            display: block;
+            font-size: 3em;
+            z-index: 300;
+            color: black;
+        }
+
+        .drop_down {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: -1;
+            right: 2rem;
+            top: 0;
+            right: 0;
+            height: 0;
+            gap: 2em;
+            width: 100%;
+            background-color: rgb(255, 0, 0);
+            overflow: hidden;
+            transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .drop_down.open {
+            height: 400px;
+        }
+
+        .drop_down li {
+            list-style: none;
+        }
+
+        .drop_down li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <!-- main menu  -->
+        <h2>Portfolio</h2>
+        <div class="main_menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- drop down components  -->
+        <div class="menu">
+            <div class="toggle_btn">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="drop_down">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn");
+        const toggleBtnIcon = document.querySelector(".toggle_btn i");
+        const dropDownMenu = document.querySelector(".drop_down");
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open");
+            const isOpen = dropDownMenu.classList.contains("open");
+            toggleBtnIcon.className = isOpen ? "bi bi-x" : "bi bi-list";
+        };
+    </script>
+</body>
+
+</html>

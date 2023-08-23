@@ -7,11 +7,11 @@ import './index.css'
 
 function Footer() {
     return <div>
-        <footer class="footer">
-            <div class="footer-text">
+        <footer className="footer">
+            <div className="footer-text">
                 <p>Copyright &copy; 2023 by Karan | All Rights Reserved</p>
             </div>
-            <div class="footer-icon">
+            <div className="footer-icon">
                 <a href="#home"><Icon.ArrowUpCircle /></a>
             </div>
         </footer>
