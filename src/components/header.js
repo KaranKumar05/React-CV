@@ -7,16 +7,38 @@ import * as  Icon from 'react-bootstrap-icons'
 import './index.css'
 
 function Header() {
-    // Dropdown Open script 
-    // const toggleBtn = document.querySelector(".toggle_btn");
-    // const toggleBtnIcon = document.querySelector(".toggle_btn i");
-    // const dropDownMenu = document.querySelector(".drop_down");
-
-    // toggleBtn.onclick = function () {
-    //     dropDownMenu.classList.toggle("open");
-    //     const isOpen = dropDownMenu.classList.contains("open");
-    //     toggleBtnIcon.className = isOpen ? "bi bi-x" : "bi bi-list";
-    // };
+    useEffect(() => {
+        // Initialize ScrollReveal
+        const sr = ScrollReveal({
+            duration: 1000,
+            origin: 'bottom',
+            distance: '30px',
+        });
+        sr.reveal('.logo', {
+            delay: 500,
+            interval: 500,
+            origin: 'left',
+            distance: '100px',
+        });
+        sr.reveal('#menu-btn', {
+            delay: 100,
+            interval: 500,
+            origin: 'top',
+            distance: '100px',
+        });
+        sr.reveal('.navbar', {
+            delay: 300,
+            interval: 200,
+            origin: 'bottom',
+            distance: '200px',
+        });
+        sr.reveal('.navbar a', {
+            delay: 200,
+            interval: 200,
+            origin: 'bottom',
+            distance: '200px',
+        });
+    }, []);
 
     return <div>
         <header className="header">

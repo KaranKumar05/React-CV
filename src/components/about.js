@@ -9,34 +9,34 @@ function About() {
     useEffect(() => {
         // Initialize ScrollReveal
         const sr = ScrollReveal({
-            duration: 1000, // Animation duration in milliseconds
-            origin: 'bottom', // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
-            distance: '30px', // Animation distance
+            duration: 1000, 
+            origin: 'bottom', 
+            distance: '30px', 
         });
 
         sr.reveal('.about-img', {
-            delay: 300, // Delay in milliseconds
-            interval: 500, // Delay between each link
-            origin: 'left', // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
-            distance: '300px', // Animation distance
+            delay: 300, 
+            interval: 500, 
+            origin: 'left', 
+            distance: '300px', 
         });
         sr.reveal('.about-content h3, .about-content h2', {
-            delay: 500, // Delay in milliseconds
-            interval: 500, // Delay between each link
-            origin: 'top', // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
-            distance: '50px', // Animation distance
+            delay: 500, 
+            interval: 500, 
+            origin: 'top', 
+            distance: '50px', 
         });
         sr.reveal('.about-content p', {
-            delay: 500, // Delay in milliseconds
-            interval: 600, // Delay between each link
-            origin: 'right', // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
-            distance: '200px', // Animation distance
+            delay: 500, 
+            interval: 600, 
+            origin: 'left', 
+            distance: '200px', 
         });
         sr.reveal('#button', {
-            delay: 500, // Delay in milliseconds
-            interval: 600, // Delay between each link
-            origin: 'bottom', // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
-            distance: '100px', // Animation distance
+            delay: 500, 
+            interval: 600, 
+            origin: 'bottom', 
+            distance: '100px', 
         });
     }, []);
     return <div>

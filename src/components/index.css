@@ -8,6 +8,7 @@
     text-decoration: none;
     border: none;
     outline: none;
+    /* border: 1px solid red; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -45,6 +46,8 @@ span {
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
+
     z-index: 100;
     background-color: var(--bg-color);
     justify-content: space-between;
@@ -233,7 +236,7 @@ span {
 
 /* Services Section  */
 .services {
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 
 .services h2 {
@@ -456,9 +459,9 @@ input[type=number] {
         font-size: 55%;
     }
 
-    .services {
-        padding-bottom: 10rem;
-    }
+    /* .services {
+        padding-bottom: 5rem;
+    } */
 
     .portfolio {
         padding-bottom: 10rem;
@@ -474,9 +477,9 @@ input[type=number] {
         padding: 10rem 3% 2rem;
     }
 
-    .services {
-        padding-bottom: 10rem;
-    }
+    /* .services {
+        padding-bottom: 5rem;
+    } */
 
     .portfolio {
         padding-bottom: 10rem;
@@ -510,9 +513,9 @@ input[type=number] {
         height: 350px;
     }
 
-    .services {
-        padding-bottom: 10rem;
-    }
+    /* .services {
+        padding-bottom: 5rem;
+    } */
 
     .portfolio {
         padding-bottom: 10rem;
@@ -570,9 +573,9 @@ input[type=number] {
         height: 400px;
     }
 
-    .services {
-        padding-bottom: 10rem;
-    }
+    /* .services {
+        padding-bottom: 5rem;
+    } */
 
     .portfolio {
         padding-bottom: 10rem;
