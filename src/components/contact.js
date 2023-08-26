@@ -3,6 +3,7 @@ import ScrollReveal from 'scrollreveal';
 
 import './index.css'
 
+
 function Contact() {
     useEffect(() => {
         // Initialize ScrollReveal
@@ -37,7 +38,7 @@ function Contact() {
             distance: '100px', // Animation distance
         });
         sr.reveal('.contact > form > .btn', {
-            delay: 600, // Delay in milliseconds
+            delay: 200, // Delay in milliseconds
             interval: 400, // Delay between each link
             origin: 'bottom', // Animation origin (e.g., 'top', 'bottom', 'left', 'right')
             distance: '100px', // Animation distance

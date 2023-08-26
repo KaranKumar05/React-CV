@@ -12,6 +12,8 @@ import MultiHeadline from './MultiHeadline'
 import './index.css'
 import Profile from './images/profile.png'
 
+import Resume from './MyResume.pdf'
+
 function Home() {
   useEffect(() => {
     // Initialize ScrollReveal
@@ -67,13 +69,13 @@ function Home() {
         <h1>KARAN KUMAR</h1>
         <MultiHeadline />
         <div className="social-media">
-          <a href="#"><Icon.Instagram /></a>
-          <a href="#"><Icon.Github /></a>
-          <a href="#"><Icon.Twitter /></a>
-          <a href="#"><Icon.Linkedin /></a>
+          <a href="https://www.instagram.com/ds_alpha07/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><Icon.Instagram /></a>
+          <a href="https://github.com/KaranKumar05" target="_blank"><Icon.Github /></a>
+          <a href="https://twitter.com/DSALPHA_07?t=oRsQ8HqRUrddTFpEKtJ6GQ&s=09" target="_blank"><Icon.Twitter /></a>
+          <a href="https://www.linkedin.com/in/karan-kumar-280464266" target="_blank"><Icon.Linkedin /></a>
         </div>
         <div id='button'>
-          <a href="#" className="btn">Download CV</a>
+          <a href={Resume} className="btn" target='_blank'>Download CV</a>
         </div>
       </div>
       <div className="home-img">

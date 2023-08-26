@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 import './index.css'
+
 import Profile from './images/profile.png'
 
 function About() {

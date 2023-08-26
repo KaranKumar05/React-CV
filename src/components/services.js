@@ -6,6 +6,7 @@ import * as  Icon from 'react-bootstrap-icons'
 
 import './index.css'
 
+
 function Services() {
     useEffect(() => {
         // Initialize ScrollReveal

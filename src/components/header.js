@@ -46,10 +46,10 @@ function Header() {
             <div id="menu-btn"><Icon.List /></div>
             <nav className="navbar">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Service</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
             </nav>
         </header>
     </div>
